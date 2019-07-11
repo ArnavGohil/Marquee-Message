@@ -9,4 +9,9 @@ To run the code :
 
 > $ java Message
   ```
-PS : This code will only work on terminal and UNIX - Based.
+  
+ > Watch the video :
+ 
+ >[![Watch the video](https://img.youtube.com/vi/IEmUQMwBZEo/hqdefault.jpg)](https://youtu.be/IEmUQMwBZEo)
+  
+PS : This code will only work on terminal and UNIX - based systems .
