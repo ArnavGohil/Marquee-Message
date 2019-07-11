@@ -12,6 +12,6 @@ To run the code :
   
  > Watch the video :
  
- >[![Watch the video](https://img.youtube.com/vi/IEmUQMwBZEo/hqdefault.jpg)](https://youtu.be/IEmUQMwBZEo)
+ >[![Watch the video](https://img.youtube.com/vi/IEmUQMwBZEo/maxresdefault.jpg)](https://youtu.be/IEmUQMwBZEo)
   
 PS : This code will only work on terminal and UNIX - based systems .
