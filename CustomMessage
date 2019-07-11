@@ -1,0 +1,318 @@
+import java.util.Scanner;
+
+public class Message {
+
+  public static void main(String[] args) throws InterruptedException
+  {
+    Scanner x = new Scanner(System.in);
+    System.out.println("Enter the String \uD83D\uDE00:-");
+    String toPRINT = x.nextLine();
+
+    StringBuilder l1 = new StringBuilder();
+    StringBuilder l2 = new StringBuilder();
+    StringBuilder l3 = new StringBuilder();
+    StringBuilder l4 = new StringBuilder();
+    StringBuilder l5 = new StringBuilder();
+
+    for (char a : toPRINT.toCharArray())
+    {
+      transform(a, l1, l2, l3, l4, l5);
+    }
+
+    String a = l1.insert(0, "\t").toString();
+    String b = l2.insert(0, "\t").toString();
+    String c = l3.insert(0, "\t").toString();
+    String d = l4.insert(0, "\t").toString();
+    String e = l5.insert(0, "\t").toString();
+
+    System.out.println("set Console length to " + a.length());
+    Thread.sleep(2000);
+
+    while (true)
+    {
+      System.out.println("\r" + a);
+      System.out.println("\r" + b);
+      System.out.println("\r" + c);
+      System.out.println("\r" + d);
+      System.out.println("\r" + e);
+
+      Thread.sleep(75);
+
+      System.out.print("\033[1F" + "\033[1F" + "\033[1F" + "\033[1F" + "\033[1F");
+      a = a.substring(1) + a.substring(0, 1);
+      b = b.substring(1) + b.substring(0, 1);
+      c = c.substring(1) + c.substring(0, 1);
+      d = d.substring(1) + d.substring(0, 1);
+      e = e.substring(1) + e.substring(0, 1);
+    }
+
+  }
+
+  private static void transform(char a, StringBuilder l1, StringBuilder l2, StringBuilder l3, StringBuilder l4, StringBuilder l5)
+  {
+    switch (a)
+    {
+      case 'A':
+        l1.append("     *     ");
+        l2.append("    * *    ");
+        l3.append("   *****   ");
+        l4.append("  *     *  ");
+        l5.append(" *       * ");
+        break;
+      case 'B':
+        l1.append(" * * *  ");
+        l2.append(" *    * ");
+        l3.append(" * * *  ");
+        l4.append(" *    * ");
+        l5.append(" * * *  ");
+        break;
+      case 'C':
+        l1.append("    * * ");
+        l2.append("  *     ");
+        l3.append(" *      ");
+        l4.append("  *     ");
+        l5.append("    * * ");
+        break;
+      case 'D':
+        l1.append(" * * *  ");
+        l2.append(" *    * ");
+        l3.append(" *    * ");
+        l4.append(" *    * ");
+        l5.append(" * * *  ");
+        break;
+      case 'E':
+        l1.append(" * * * ");
+        l2.append(" *     ");
+        l3.append(" * *   ");
+        l4.append(" *     ");
+        l5.append(" * * * ");
+        break;
+      case 'F':
+        l1.append(" * * * ");
+        l2.append(" *     ");
+        l3.append(" * *   ");
+        l4.append(" *     ");
+        l5.append(" *     ");
+        break;
+      case 'G':
+        l1.append("    * *  ");
+        l2.append("  *      ");
+        l3.append(" *   * * ");
+        l4.append("  *    * ");
+        l5.append("    *  * ");
+        break;
+      case 'H':
+        l1.append(" *     * ");
+        l2.append(" *     * ");
+        l3.append(" * * * * ");
+        l4.append(" *     * ");
+        l5.append(" *     * ");
+        break;
+      case 'I':
+        l1.append(" * * * ");
+        l2.append("   *   ");
+        l3.append("   *   ");
+        l4.append("   *   ");
+        l5.append(" * * * ");
+        break;
+      case 'J':
+        l1.append(" * * * ");
+        l2.append("     * ");
+        l3.append("     * ");
+        l4.append(" *   * ");
+        l5.append("   *   ");
+        break;
+      case 'K':
+        l1.append(" *   * ");
+        l2.append(" *  *  ");
+        l3.append(" * *   ");
+        l4.append(" *  *  ");
+        l5.append(" *   * ");
+        break;
+      case 'L':
+        l1.append(" *     ");
+        l2.append(" *     ");
+        l3.append(" *     ");
+        l4.append(" *     ");
+        l5.append(" * * * ");
+        break;
+      case 'M':
+        l1.append(" *   * ");
+        l2.append(" * * * ");
+        l3.append(" *   * ");
+        l4.append(" *   * ");
+        l5.append(" *   * ");
+        break;
+      case 'N':
+        l1.append(" *    * ");
+        l2.append(" * *  * ");
+        l3.append(" *   ** ");
+        l4.append(" *    * ");
+        l5.append(" *    * ");
+        break;
+      case 'O':
+        l1.append(" * * * ");
+        l2.append(" *   * ");
+        l3.append(" *   * ");
+        l4.append(" *   * ");
+        l5.append(" * * * ");
+        break;
+      case 'P':
+        l1.append(" * * *  ");
+        l2.append(" *    * ");
+        l3.append(" * * *  ");
+        l4.append(" *      ");
+        l5.append(" *      ");
+        break;
+      case 'Q':
+        l1.append(" * * * ");
+        l2.append(" * * * ");
+        l3.append(" * * * ");
+        l4.append(" * * * ");
+        l5.append(" * * * ");
+        break;
+      case 'R':
+        l1.append(" * * * ");
+        l2.append(" *   * ");
+        l3.append(" * * * ");
+        l4.append(" * *   ");
+        l5.append(" *   * ");
+        break;
+      case 'S':
+        l1.append("  * * *  ");
+        l2.append(" *       ");
+        l3.append("  * * *  ");
+        l4.append("       * ");
+        l5.append("  * * *  ");
+        break;
+      case 'T':
+        l1.append(" * * * ");
+        l2.append("   *   ");
+        l3.append("   *   ");
+        l4.append("   *   ");
+        l5.append("   *   ");
+        break;
+      case 'U':
+        l1.append(" *   * ");
+        l2.append(" *   * ");
+        l3.append(" *   * ");
+        l4.append(" *   * ");
+        l5.append(" * * * ");
+        break;
+      case 'V':
+        l1.append(" *     * ");
+        l2.append(" *     * ");
+        l3.append("  *   *  ");
+        l4.append("   * *   ");
+        l5.append("    *    ");
+        break;
+      case 'W':
+        l1.append(" *         * ");
+        l2.append("  *       *  ");
+        l3.append("   *  *  *   ");
+        l4.append("   * * * *    ");
+        l5.append("   *     *    ");
+        break;
+      case 'X':
+        l1.append(" *   * ");
+        l2.append("  * *  ");
+        l3.append("   *   ");
+        l4.append("  * *  ");
+        l5.append(" *   * ");
+        break;
+      case 'Y':
+        l1.append(" *   * ");
+        l2.append("   *   ");
+        l3.append("   *   ");
+        l4.append("   *   ");
+        l5.append("   *   ");
+        break;
+      case 'Z':
+        l1.append(" * * * ");
+        l2.append("    *  ");
+        l3.append("   *   ");
+        l4.append("  *    ");
+        l5.append(" * * * ");
+        break;
+      case '1':
+        l1.append(" * ");
+        l2.append(" * ");
+        l3.append(" * ");
+        l4.append(" * ");
+        l5.append(" * ");
+        break;
+      case '2':
+        l1.append(" * * * ");
+        l2.append("     * ");
+        l3.append("   *   ");
+        l4.append(" *    ");
+        l5.append(" * * * ");
+        break;
+      case '3':
+        l1.append(" * * * ");
+        l2.append("     * ");
+        l3.append(" * * * ");
+        l4.append("     * ");
+        l5.append(" * * * ");
+        break;
+      case '4':
+        l1.append(" *   * ");
+        l2.append(" *   * ");
+        l3.append(" * * * ");
+        l4.append("     * ");
+        l5.append("     * ");
+        break;
+      case '5':
+        l1.append(" * * *  ");
+        l2.append(" *      ");
+        l3.append(" * * *  ");
+        l4.append("      * ");
+        l5.append(" * * *  ");
+        break;
+      case '6':
+        l1.append(" * * * ");
+        l2.append(" *     ");
+        l3.append(" * * * ");
+        l4.append(" *   * ");
+        l5.append(" * * * ");
+        break;
+      case '7':
+        l1.append(" * * * ");
+        l2.append("     * ");
+        l3.append("     * ");
+        l4.append("     * ");
+        l5.append("     * ");
+        break;
+      case '8':
+        l1.append(" * * * ");
+        l2.append(" *   * ");
+        l3.append(" * * * ");
+        l4.append(" *   * ");
+        l5.append(" * * * ");
+        break;
+      case '9':
+        l1.append(" * * * ");
+        l2.append(" *   * ");
+        l3.append(" * * * ");
+        l4.append("     * ");
+        l5.append(" * * * ");
+        break;
+      case '0':
+        l1.append(" * * * ");
+        l2.append(" *   * ");
+        l3.append(" *   * ");
+        l4.append(" *   * ");
+        l5.append(" * * * ");
+        break;
+      case ' ':
+        l1.append(" \t\t ");
+        l2.append(" \t\t ");
+        l3.append(" \t\t ");
+        l4.append(" \t\t ");
+        l5.append(" \t\t ");
+        break;
+
+    }
+  }
+
+}
